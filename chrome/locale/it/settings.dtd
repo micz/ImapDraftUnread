@@ -1,4 +1,4 @@
-<!ENTITY ImapDraftUnread.SettingsTitle "Opzioni Imap Draft Unread">
+<!ENTITY ImapDraftUnread.SettingsTitle "Opzioni IMAP Draft Unread">
 <!ENTITY ImapDraftUnread.GlobalDescSettingTab "Scegli come gestire i messaggi nella cartella bozze (draft) degli account IMAP.">
 <!ENTITY ImapDraftUnread.TabSettings.label "Opzioni">
 <!ENTITY ImapDraftUnread.TabInfo.label "Informazioni">
