@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="mzidu-settings.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://imapdraftunread/locale/settings.dtd">
+<prefwindow id="ImapDraftUnread_Settings"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+  title="&ImapDraftUnread.SettingsTitle; ">
+  <script type="application/x-javascript" src="chrome://imapdraftunread/content/mzidu-settings.js" />
+  <prefpane id="ImapDraftUnread_PrefPane">
+    <preferences>
+      <preference id="ImapDraftUnread.makeRead"
+        name="extensions.miczImapDraftUnread.makeRead"
+        type="bool" onchange="miczImapDraftUnreadPref.clearNew_reset();" />
+      <preference id="ImapDraftUnread.clearNew"
+        name="extensions.miczImapDraftUnread.clearNew"
+        type="bool" onchange="miczImapDraftUnreadPref.makeRead_reset();" />
+    </preferences>
+    <tabbox>
+      <tabs>
+        <tab label="&ImapDraftUnread.TabSettings.label;"/>
+        <tab label="&ImapDraftUnread.TabInfo.label;"/>
+      </tabs>
+      <tabpanels>
+        <tabpanel id="iqtab" orient="vertical">
+          <label control="symbol" value="&ImapDraftUnread.GlobalDescSettingTab;"/>
+          <label control="symbol" value=" "/>
+          <checkbox id="ImapDraftUnread.makeRead_checkbox" label="&ImapDraftUnread.makeRead.label;"
+            preference="ImapDraftUnread.makeRead" />
+          <label control="symbol" value=" "/>
+          <checkbox id="ImapDraftUnread.clearNew_checkbox" label="&ImapDraftUnread.clearNew.label;"
+            preference="ImapDraftUnread.clearNew" />
+        </tabpanel>
+        <tabpanel id="idutab_info" orient="vertical">
+	  <description style="word-wrap:normal;max-width:500px;">&ImapDraftUnread.InfoMainDesc;</description>
+          <label control="symbol" value=" "/>
+	  <label value="&ImapDraftUnread.DonateLink;" class="text-link mzidu-donate" href="http://micz.it/thunderdbird-addon-imap-draft-unread/donate/"/>
+        </tabpanel>
+      </tabpanels>
+    </tabbox>
+  </prefpane>
+</prefwindow>
