@@ -13,8 +13,8 @@
     <em:localized>
       <Description>
         <em:locale>it</em:locale>
-        <em:name>IMAP Draft Unread</em:name>
-        <em:description>This is a Thunderbird addon that let you customize the behaiour of the IMAP draft unread messages. No more notifications for your drafts!!</em:description>
+        <em:name>IMAP Bozze (Draft) Non Lette</em:name>
+        <em:description>Questa estensione ti permette di scegliere come gestire lo stato di non letto delle bozze (draft) che stai scrivendo in un account IMAP. Basta con le notifiche di nuova mail per le bozze che stai scrivendo!!</em:description>
         <em:creator>Mic (m@micz.it)</em:creator>
         <em:contributor></em:contributor>
         <em:translator>Mic (m@micz.it)</em:translator>
