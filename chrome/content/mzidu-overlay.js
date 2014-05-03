@@ -4,14 +4,13 @@ var miczImapDraftUnread = {
     init: function(){
       //dump('>>>>>>>> miczImapDraftUnread init...'+"\r\n");
       //dump('>>>>>>>> nsMsgFolderFlagType.Drafts: '+ nsMsgFolderFlagType.Drafts+"\r\n");
-      //dump('>>>>>>>> nsMsgFolderFlagType.Drafts: '+ (0x00000400).toString(16)+"\r\n");
       var nsIFolderListener = Components.interfaces.nsIFolderListener;
       var notifyFlags = nsIFolderListener.added;
       var mailSession = Components.classes["@mozilla.org/messenger/services/session;1"]. getService(Components.interfaces.nsIMsgMailSession);
-      mailSession.AddFolderListener(miczImapDraftUnread.duFolderListener,notifyFlags);
+      mailSession.AddFolderListener(miczImapDraftUnread.iduFolderListener,notifyFlags);
     },
 
-    duFolderListener:
+    iduFolderListener:
     {
          OnItemAdded: function(parentItem, item, view) {
             if(parentItem.flags & 0x00000400) { //It's a draft folder!!
