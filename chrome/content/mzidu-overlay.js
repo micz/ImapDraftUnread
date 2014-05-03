@@ -15,9 +15,17 @@ var miczImapDraftUnread = {
     {
          OnItemAdded: function(parentItem, item, view) {
             if(parentItem.flags & 0x00000400) { //It's a draft folder!!
-              dump( 'OnItemAdded: '+parentItem.flags.toString(16) +"\r\n");
-              //parentItem.markAllMessagesRead(null);
-                parentItem.clearNewMessages();
+              //dump( 'OnItemAdded: '+parentItem.flags.toString(16) +"\r\n");
+                let prefs = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefService);
+                prefs = prefs.getBranch("extensions.miczImapDraftUnread.");
+                let p_makeRead=prefs.getBoolPref("makeRead");
+                let p_clearNew=prefs.getBoolPref("clearNew");
+                if(p_makeRead){
+                  parentItem.markAllMessagesRead(null);
+                }
+                if(p_clearNew){
+                  parentItem.clearNewMessages();
+                }
               //parentItem.getTotalMessages(null);
             }
          },
