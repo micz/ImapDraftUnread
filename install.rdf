@@ -4,7 +4,7 @@
   <Description about="urn:mozilla:install-manifest">
     <em:id>imapdraftunread@micz.it</em:id>
     <em:type>2</em:type>
-    <em:version>0.1alpha</em:version>
+    <em:version>0.2alpha</em:version>
     <em:name>IMAP Draft Unread</em:name>
     <em:description>_</em:description>
     <em:creator>Mic (m@micz.it)</em:creator>
