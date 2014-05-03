@@ -1,0 +1,5 @@
+content   imapdraftunread                 chrome/content/
+locale    imapdraftunread   en-US         chrome/locale/en-US/
+locale    imapdraftunread   it            chrome/locale/it/
+
+overlay chrome://messenger/content/messenger.xul chrome://imapdraftunread/content/mzidu-overlay.xul
