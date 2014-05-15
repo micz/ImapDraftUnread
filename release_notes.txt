@@ -3,6 +3,7 @@
 ==========
 Version 1.1 - ??/??/2014
 - French translation added.
+- Icon embedded.
 - 
 ==========
 Version 1.0 - 03/05/2014

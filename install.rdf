@@ -7,6 +7,8 @@
     <em:version>1.1alpha</em:version>
     <em:name>IMAP Draft Unread</em:name>
     <em:description>This is a Thunderbird addon that let you customize the behaiour of the IMAP draft unread messages. No more new mail notifications for your drafts!!</em:description>
+    <em:iconURL>chrome://imapdraftunread/skin/icon.png</em:iconURL>
+    <em:icon64URL>chrome://imapdraftunread/skin/icon64.png</em:icon64URL>
     <em:creator>Mic (m@micz.it)</em:creator>
     <em:contributor></em:contributor>
     <em:optionsURL>chrome://imapdraftunread/content/mzidu-settings.xul</em:optionsURL>
