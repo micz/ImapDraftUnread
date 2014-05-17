@@ -3,8 +3,8 @@
 ==========
 Version 1.1 - ??/??/2014
 - French translation added.
-- Icon embedded.
-- 
+- Embedded addon icon.
+- Options disabled on OSX, and forced to always mark draft as read.
 ==========
 Version 1.0 - 03/05/2014
 - First release.
