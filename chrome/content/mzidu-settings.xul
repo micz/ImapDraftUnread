@@ -29,6 +29,7 @@
           <label control="symbol" value=" "/>
           <checkbox id="ImapDraftUnread.clearNew_checkbox" label="&ImapDraftUnread.clearNew.label;"
             preference="ImapDraftUnread.clearNew" />
+          <label control="symbol" value=" "/>
         </tabpanel>
         <tabpanel id="idutab_info" orient="vertical">
 	  <description style="word-wrap:normal;max-width:500px;">&ImapDraftUnread.InfoMainDesc;</description>
