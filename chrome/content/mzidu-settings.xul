@@ -6,6 +6,7 @@
   xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
   title="&ImapDraftUnread.SettingsTitle;"
   onload="miczImapDraftUnreadPref.onLoad();">
+  <script type="application/x-javascript" src="chrome://imapdraftunread/content/mzidu-osutils.js" />
   <script type="application/x-javascript" src="chrome://imapdraftunread/content/mzidu-settings.js" />
   <prefpane id="ImapDraftUnread_PrefPane">
     <preferences>

@@ -13,21 +13,17 @@ var miczImapDraftUnread = {
       
       // Returns "WINNT" on Windows Vista, XP, 2000, and NT systems;
       // "Linux" on GNU/Linux; and "Darwin" on Mac OS X.
-      this.currentOS = Components.classes["@mozilla.org/xre/app-info;1"].getService(Components.interfaces.nsIXULRuntime).OS;
+      this.currentOS = miczImapDraftUnreadOSUtils.getCurrentOS();
       dump('>>>>>>>> miczImapDraftUnread currentOS: '+this.currentOS+"\r\n");
       
       //check if we are on OSX, so the clearNew fuction is useless
-      if(miczImapDraftUnread.onOSX()){
+      if(miczImapDraftUnreadOSUtils.onOSX(this.currentOS)){
         dump('>>>>>>>> miczImapDraftUnread we are on OSX!'+"\r\n");
         let prefs = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefService);
         prefs = prefs.getBranch("extensions.miczImapDraftUnread.");
         prefs.setBoolPref("clearNew",false);
         prefs.setBoolPref("makeRead",true);
       }
-    },
-
-    onOSX:function(){
-      return this.currentOS=='Darwin';
     },
 
     iduFolderListener:

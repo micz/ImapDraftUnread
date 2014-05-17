@@ -1,9 +1,11 @@
 "use strict";
 var miczImapDraftUnreadPref = {
+  
+  currentOS:'',
 
   onLoad: function(){
-    window.opener.miczImapDraftUnread.setCurrentOS();
-    dump('>>>>>>>> miczImapDraftUnread currentOS (from settings page): '+miczImapDraftUnread.currentOS+"\r\n");
+    this.currentOS=miczImapDraftUnreadOSUtils.getCurrentOS();
+    dump('>>>>>>>> miczImapDraftUnreadPref currentOS: '+this.currentOS+"\r\n");
   },
 
   clearNew_reset: function(){

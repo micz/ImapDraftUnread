@@ -4,6 +4,7 @@
 <overlay id="ImapDraftUnread-browser-overlay"
  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
+<script type="application/x-javascript" src="chrome://imapdraftunread/content/mzidu-osutils.js" />
 <script type="application/x-javascript" src="chrome://imapdraftunread/content/mzidu-overlay.js" />
 
 <stringbundleset id="stringbundleset">
