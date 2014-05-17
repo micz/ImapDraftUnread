@@ -6,6 +6,9 @@
   xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
   title="&ImapDraftUnread.SettingsTitle;"
   onload="miczImapDraftUnreadPref.onLoad();">
+  <stringbundleset id="stringbundleset_settings">
+    <stringbundle id="ImapDraftUnread-string-bundle_settings" src="chrome://imapdraftunread/locale/settings.properties" />
+  </stringbundleset>
   <script type="application/x-javascript" src="chrome://imapdraftunread/content/mzidu-osutils.js" />
   <script type="application/x-javascript" src="chrome://imapdraftunread/content/mzidu-settings.js" />
   <prefpane id="ImapDraftUnread_PrefPane">
@@ -17,26 +20,26 @@
         name="extensions.miczImapDraftUnread.clearNew"
         type="bool" onchange="miczImapDraftUnreadPref.makeRead_reset();" />
     </preferences>
-    <tabbox>
+    <tabbox id="ImapDraftUnread_tabbox" style="min-height:11.5em;">
       <tabs>
         <tab label="&ImapDraftUnread.TabSettings.label;"/>
         <tab label="&ImapDraftUnread.TabInfo.label;"/>
       </tabs>
       <tabpanels>
-        <tabpanel id="iqtab" orient="vertical">
-          <label control="symbol" value="&ImapDraftUnread.GlobalDescSettingTab;"/>
-          <label control="symbol" value=" "/>
+        <tabpanel id="idutab" orient="vertical">
+    	  <description id="ImapDraftUnread.GlobalDescSettingTab_label" style="word-wrap:normal;max-width:500px;" flex="12">&ImapDraftUnread.GlobalDescSettingTab;</description>
+          <spacer style="height: 10px"/>
           <checkbox id="ImapDraftUnread.makeRead_checkbox" label="&ImapDraftUnread.makeRead.label;"
             preference="ImapDraftUnread.makeRead" />
-          <label control="symbol" value=" "/>
+          <spacer style="height: 10px"/>
           <checkbox id="ImapDraftUnread.clearNew_checkbox" label="&ImapDraftUnread.clearNew.label;"
             preference="ImapDraftUnread.clearNew" />
-          <label control="symbol" value=" "/>
+          <spacer style="height: 10px"/>
         </tabpanel>
         <tabpanel id="idutab_info" orient="vertical">
-	  <description style="word-wrap:normal;max-width:500px;">&ImapDraftUnread.InfoMainDesc;</description>
-          <label control="symbol" value=" "/>
-	  <label value="&ImapDraftUnread.DonateLink;" class="text-link mzidu-donate" href="http://micz.it/thunderdbird-addon-imap-draft-unread/donate/"/>
+          <description style="word-wrap:normal;max-width:500px;">&ImapDraftUnread.InfoMainDesc;</description>
+          <spacer style="height: 10px"/>
+          <label value="&ImapDraftUnread.DonateLink;" class="text-link mzidu-donate" href="http://micz.it/thunderdbird-addon-imap-draft-unread/donate/"/>
         </tabpanel>
       </tabpanels>
     </tabbox>
