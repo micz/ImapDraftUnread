@@ -1,5 +1,7 @@
 "use strict";
 var miczImapDraftUnread = {
+    
+    currentOS:'',
 
     init: function(){
       //dump('>>>>>>>> miczImapDraftUnread init...'+"\r\n");
@@ -8,6 +10,11 @@ var miczImapDraftUnread = {
       var notifyFlags = nsIFolderListener.added;
       var mailSession = Components.classes["@mozilla.org/messenger/services/session;1"]. getService(Components.interfaces.nsIMsgMailSession);
       mailSession.AddFolderListener(miczImapDraftUnread.iduFolderListener,notifyFlags);
+      
+      // Returns "WINNT" on Windows Vista, XP, 2000, and NT systems;
+      // "Linux" on GNU/Linux; and "Darwin" on Mac OS X.
+      this.currentOS = Components.classes["@mozilla.org/xre/app-info;1"].getService(Components.interfaces.nsIXULRuntime).OS;
+      dump('>>>>>>>> miczImapDraftUnread currentOS: '+this.currentOS+"\r\n");
     },
 
     iduFolderListener:
