@@ -4,7 +4,8 @@
 <!DOCTYPE overlay SYSTEM "chrome://imapdraftunread/locale/settings.dtd">
 <prefwindow id="ImapDraftUnread_Settings"
   xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
-  title="&ImapDraftUnread.SettingsTitle; ">
+  title="&ImapDraftUnread.SettingsTitle;"
+  onload="miczImapDraftUnreadPref.onLoad();">
   <script type="application/x-javascript" src="chrome://imapdraftunread/content/mzidu-settings.js" />
   <prefpane id="ImapDraftUnread_PrefPane">
     <preferences>
