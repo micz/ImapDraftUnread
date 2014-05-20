@@ -1,7 +1,7 @@
 -= IMAP Draft Unread Thunderbird Addon Release Notes =-
 
 ==========
-Version 1.1 - ??/??/2014
+Version 1.1 - 20/05/2014
 - French translation added.
 - Embedded addon icon.
 - Options disabled on OSX, and forced to always mark draft as read.
