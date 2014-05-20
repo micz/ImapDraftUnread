@@ -5,10 +5,10 @@ var miczImapDraftUnreadPref = {
 
   onLoad: function(){
     this.currentOS=miczImapDraftUnreadOSUtils.getCurrentOS();
-    dump('>>>>>>>> miczImapDraftUnreadPref currentOS: '+this.currentOS+"\r\n");
+    //dump('>>>>>>>> miczImapDraftUnreadPref currentOS: '+this.currentOS+"\r\n");
     
     if(miczImapDraftUnreadOSUtils.onOSX(this.currentOS)){
-        dump('>>>>>>>> miczImapDraftUnreadPref we are on OSX!'+"\r\n");
+        //dump('>>>>>>>> miczImapDraftUnreadPref we are on OSX!'+"\r\n");
         let strbundle = document.getElementById("ImapDraftUnread-string-bundle_settings");
         let osx_msg=strbundle.getString("OSX_Settings_Msg");
         document.getElementById("ImapDraftUnread.clearNew_checkbox").disabled=true;
