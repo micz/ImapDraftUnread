@@ -29,7 +29,7 @@
         <em:description>Cette extension pour Thunderbird vous permet de modifier la gestion des messages en brouillon avec le protocole IMAP. Vous ne recevrez plus de notifications pour vos brouillons !</em:description>
         <em:creator>Mic (m@micz.it)</em:creator>
         <em:contributor></em:contributor>
-        <em:translator>Goofy</em:translator>
+        <em:translator>Goofy, vono</em:translator>
       </Description>
     </em:localized>
     <em:targetApplication>
