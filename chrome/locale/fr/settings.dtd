@@ -5,4 +5,4 @@
 <!ENTITY ImapDraftUnread.InfoMainDesc "Cette extension est gratuite, je la développe sur mon temps libre. si vous l'utilisez régulièrement avec satisfaction, envisagez de faire un petit don en cliquant sur le bouton ci-dessous. Merci !">
 <!ENTITY ImapDraftUnread.DonateLink "Faites un don !">
 <!ENTITY ImapDraftUnread.makeRead.label "Marquer comme lus tous les messages en brouillon.">
-<!ENTITY ImapDraftUnread.clearNew.label "Laisser les messages comme non-lus, mais ne pas les prendre en compte pour les les notifications de nouveaux messages.">
+<!ENTITY ImapDraftUnread.clearNew.label "Laisser les messages comme non-lus, mais ne pas les prendre en compte pour les notifications de nouveaux messages.">
