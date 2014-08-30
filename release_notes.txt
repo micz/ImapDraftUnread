@@ -3,6 +3,7 @@
 ==========
 Version 1.2 - ??/??/2014
 - French locale updated.
+- Chinese Simplified (zh-CN) added, thanks to yfdyh000 (Babelzilla.org).
 - 
 ==========
 Version 1.1 - 20/05/2014
