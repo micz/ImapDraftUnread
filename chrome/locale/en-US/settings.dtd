@@ -4,5 +4,5 @@
 <!ENTITY ImapDraftUnread.TabInfo.label "Info">
 <!ENTITY ImapDraftUnread.InfoMainDesc "This addon is free and developed in my spare time. If you're using it in your every day routine, feel free to support it with a little donation clicking on the link below. Thanks!!">
 <!ENTITY ImapDraftUnread.DonateLink "Make a donation!">
-<!ENTITY ImapDraftUnread.makeRead.label "Make read all draft messages.">
-<!ENTITY ImapDraftUnread.clearNew.label "Left draft messages unread, but do not consider them for the new mail notification.">
+<!ENTITY ImapDraftUnread.makeRead.label "Mark draft messages as read.">
+<!ENTITY ImapDraftUnread.clearNew.label "Leave draft messages unread, but do not consider them for the new mail notification.">
