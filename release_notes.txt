@@ -1,6 +1,9 @@
 -= IMAP Draft Unread Thunderbird Addon Release Notes =-
 
 ==========
+Version 1.2 - ??/??/2018
+- 
+==========
 Version 1.1.1 - 19/02/2018
 - French locale updated.
 - Chinese Simplified (zh-CN) added, thanks to yfdyh000 (Babelzilla.org).
