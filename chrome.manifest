@@ -2,6 +2,7 @@ content   imapdraftunread                 chrome/content/
 locale    imapdraftunread   en-US         chrome/locale/en-US/
 locale    imapdraftunread   it            chrome/locale/it/
 locale    imapdraftunread   fr            chrome/locale/fr/
+locale    imapdraftunread   zh-CN         chrome/locale/zh-CN/
 
 skin imapdraftunread default chrome/skin/
 
