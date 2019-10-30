@@ -31,6 +31,8 @@
         <em:contributor></em:contributor>
         <em:translator>Goofy, vono</em:translator>
       </Description>
+    </em:localized>
+    <em:localized>
       <Description>
         <em:locale>zh-CN</em:locale>
         <em:name>IMAP Draft Unread</em:name>
